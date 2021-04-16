@@ -4,13 +4,13 @@ export class Comment {
     author: string;
     content: string;
     isSoftDeleted?: boolean;
-    constructor( creationDate: string,
+    constructor(creationDate: string,
         author: string,
-        content: string){
-            this.creationDate = creationDate;
-            this.author = author;
-            this.content = content;
-            this.isSoftDeleted = false;
+        content: string) {
+        this.creationDate = creationDate;
+        this.author = author;
+        this.content = content;
+        this.isSoftDeleted = false;
     }
-    
+
 }

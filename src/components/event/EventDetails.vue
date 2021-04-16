@@ -83,7 +83,11 @@
       <div class="row">
         <div class="form-group col-md-7">
           <label for="state">Employé impliqué</label>
-          <select class="form-control" v-model="event.involvedEmployeeId" id="involvedEmployeeId">
+          <select
+            class="form-control"
+            v-model="event.involvedEmployeeId"
+            id="involvedEmployeeId"
+          >
             <option
               v-for="employee in employeeList"
               v-bind:value="employee.id"
@@ -122,8 +126,7 @@ import {
 } from "@/data_test";
 import { Employee } from "@/models/employee.model";
 @Component({
-  components: {
-  },
+  components: {},
   filters: {
     formatDate: function (value: string) {
       if (!value) return "";
@@ -162,5 +165,4 @@ label {
 input:read-only {
   background-color: white;
 }
-
 </style>

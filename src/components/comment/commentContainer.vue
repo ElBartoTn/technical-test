@@ -80,7 +80,7 @@ export default class CommentsContainer extends Vue {
   @Prop() readonly comment!: Comment;
   @Prop() readonly commentIndex!: number;
   @Prop() comments!: Comment[];
- @Prop() isAdd!: boolean;
+  @Prop() isAdd!: boolean;
   CommentContext: any = CommentContext;
   private context: CommentContext = CommentContext.Consult;
   private commentCopy = Object.assign({}, this.comment);
