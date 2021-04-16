@@ -193,7 +193,7 @@ export function getFormattedTimeFromIsoString(isoString: string, addUnit: boolea
  * @function
  *  @param {String} isoString - La date en isoString / Date with isoString format
  */
- export function getDatewithMonthName(isoString: string): string{
+ export function getDateWithMonthName(isoString: string): string{
     const date: Date = new Date(isoString);
     return moment(date).format("DD MMMM YYYY");
 }

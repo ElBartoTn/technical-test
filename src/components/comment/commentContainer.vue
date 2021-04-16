@@ -62,7 +62,7 @@
 </template>
 
 <script lang="ts">
-import { getDatewithMonthName } from "@/data_test";
+import { getDateWithMonthName } from "@/data_test";
 import { CommentContext } from "@/models/commentContext.enum";
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { Comment } from "../../models/comment.model";
@@ -72,7 +72,7 @@ import { Comment } from "../../models/comment.model";
   filters: {
     formatDate: function (value: string) {
       if (!value) return "";
-      return getDatewithMonthName(value);
+      return getDateWithMonthName(value);
     },
   },
 })
@@ -80,7 +80,6 @@ export default class CommentsContainer extends Vue {
   @Prop() readonly comment!: Comment;
   @Prop() readonly commentIndex!: number;
   @Prop() comments!: Comment[];
-  @Prop() isAdd!: boolean;
   CommentContext: any = CommentContext;
   private context: CommentContext = CommentContext.Consult;
   private commentCopy = Object.assign({}, this.comment);
