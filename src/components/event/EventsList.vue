@@ -1,11 +1,6 @@
 <template>
   <div class="row">
     <div class="col-md-3">
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
       <div class="event-list-container">
         <ul>
           <li
